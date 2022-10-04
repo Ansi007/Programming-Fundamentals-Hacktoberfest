@@ -1,0 +1,2 @@
+# Covering topics : 1D_Arrays,File_handling,struts,Binary File Handling
+1.You can add the all donor's record in run time in the bds_donor_file 2.You can search the specfic person record 3.You can search the record on the blood request 4.You can update the specfic person record after the successful blood donation 5.You can delete the record if a person get somme medical prolems 6.You can display all the records simultaneously

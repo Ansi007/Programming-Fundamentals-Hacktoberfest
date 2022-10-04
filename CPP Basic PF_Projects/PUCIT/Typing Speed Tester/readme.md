@@ -1,0 +1,2 @@
+# Covering topics : 2D_Dyamic_Character_Arrays
+Typing-Speed-Tester in C++ by using DYNAMIC MEMPRY ALLOCATION and CAHRACTER-ARRAYS concepts. Its main features are show total words and letters you write, total time you consume, speed per minute, an additional backSpace run-time deletion functionality.
