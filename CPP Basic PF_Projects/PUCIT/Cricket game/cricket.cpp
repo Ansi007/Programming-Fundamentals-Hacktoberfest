@@ -304,3 +304,37 @@ void DecisionOfGame(int score3, int score4) //declare game winner team
 		cout << "\n This match is tie. You have done a great job.\n";
 	}
 }
+
+
+int main()
+{
+	int score3 = 0, score4=0;
+	int inning1;
+	int over = 0;
+	TeamNames();
+	cout << "\nEnter the no. of overs you want in the match: ";
+	cin >> over;
+	inning1= DecisionOfToss();
+	switch(inning1)
+	{
+	    case 0:
+		{
+			score4 = batting(over);
+			cout << "\n The score of your team is: " << score4 << endl;
+			score3 = bowling(over);
+			cout << "\n The score of opponent team is: " << score3 <<endl;
+			DecisionOfGame(score3, score4);
+			break;
+		}
+	    case 1: 
+		{
+		    score3 = bowling(over);
+		    cout << "\n The score of opponent team is: " << score3<< endl;
+		    score4 = batting(over);
+		    cout << "\n The score of your team is: " << score4<< endl;
+			DecisionOfGame(score3, score4);
+		    break;
+		}
+	}// end of switch
+	return 0;
+}
