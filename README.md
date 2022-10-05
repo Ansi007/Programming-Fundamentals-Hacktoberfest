@@ -18,31 +18,53 @@ Download and Install [GitHub Desktop](https://desktop.github.com/)
 
 ### Step - 4:
 
-Fork this Repository or Any other repository with the tag "hacktoberfest"
+Fork this Repository or Any other repository with the tag "hacktoberfest" by clicking on the fork button on the top of the repository page.
 
 ### Step - 5:
 
-Clone that (Forked) repository to your local storage
+Clone that (Forked) repository to your local storage.
+Open a terminal and run the following git command:
+
+```
+git clone "url of repository"
+```
 
 ### Step - 6:
 
-Create new branch
+Create new branch using the `git switch` command:
+
+```
+git switch -c your-new-branch-name
+```
 
 ### Step - 7:
 
-Add your changes
+Add your changes such as by using VScode or any other IDE.
 
+Add those changes to the branch you just created using the `git add` command:
+
+```
+git add fileNameYouJustAdded
+```
 ### Step - 8:
 
-Commit your changes
+Commit your changes using the `git commit` command:
+
+```
+git commit -m "meaningful commit message"
+```
 
 ### Step - 9:
 
-Push your changes
+Push your changes using the command `git push`:
+
+```
+git push origin -u your-branch-name
+```
 
 ### Step - 10:
 
-Create Pull Request
+Create Pull Request 
 
 ### Step - 11:
 
