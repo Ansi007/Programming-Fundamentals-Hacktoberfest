@@ -15,13 +15,16 @@ int main()
 
         case '-':
         printf("Sub is %d-%d=%d",a,b,a-b);
+        break;
 
         case '*':
         printf("Mul is %d*%d=%d",a,b,a*b);
-
+        break;
+            
         case '/':
         printf("Div is %d/%d=%d",a,b,a/b);
-
+        break;
+            
         default:
         printf("ERROR 404");
     }
