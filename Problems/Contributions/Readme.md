@@ -20,6 +20,7 @@
 18.   	Write a C program to enter marks of five subjects and calculate total, average and percentage.
 19.   	Write a C program to enter P, T, R and calculate Simple Interest.	
 20.   	Write a C program to enter P, T, R and calculate Compound Interest.
+21.     Write a C++ program that will convert a descimal number to binary.
 
 # Problem Credits
 1-10 (https://adriann.github.io/programming_problems.html)
