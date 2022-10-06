@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1591467756 source:e:\rock paper\rock paper\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+
