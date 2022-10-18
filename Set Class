@@ -1,0 +1,83 @@
+import copy
+import random as r
+class Set:
+    def __init__(self):
+        self.__elements = []
+
+    def element_not_exist(self, element):
+        for e in self.__elements:
+            if e == element:
+                return False
+        return True
+
+    def add_element(self,element):
+        if self.element_not_exist(element):
+            self.__elements.append(element)
+
+    def __add__(self, o2):
+        new_set = copy.deepcopy(self)
+        for element in o2.__elements:
+            if self.element_not_exist(element):
+                new_set.__elements.append(element)
+        return new_set
+
+    def __sub__(self, o2):
+        new_set = Set()
+        for element in self.__elements:
+            if o2.element_not_exist(element):
+                new_set.__elements.append(element)
+        return new_set
+
+    def __str__(self):
+        s = ''
+        for element in self.__elements:
+            s = s + str(element) + ' '
+        return s
+
+    def get_list(self):
+        my_list = [element for element in self.__elements]
+        return my_list
+    def is_subset(self,set2):
+        for element in self.__elements:
+            if element not in set2.__elements:
+                return False
+        return True
+    def is_superset(self,set2):
+        for element in set2.__elements:
+            if element not in self.__elements:
+                return False
+        return True
+    def compare(self, set2):
+        if len(self.__elements) != len(set2.__elements):
+            return False
+        for element in self.__elements:
+            if element not in set2.__elements:
+                return False
+        return True
+    def count_diff(self, set2):
+        count=0
+        for element in self.__elements:
+            if element not in set2.__elements:
+                count+=1
+        return count
+def main():
+
+    s1 =Set()
+    for i in range(20):
+        s1.add_element(r.randint(10,99))
+    print(s1)
+    s2 =Set()
+    for i in range(20):
+        s2.add_element(r.randint(10,99))
+    print(s2)
+    s3 = s1 + s2
+    print(s3)
+    s4=s1- s2
+    print(s4)
+    elements=s4.get_list()
+    print(elements)
+    print(s1.is_subset(s2))
+    print(s1.is_superset(s2))
+    print(s1.compare(s2))
+    print(s1.count_diff(s2))
+main()
