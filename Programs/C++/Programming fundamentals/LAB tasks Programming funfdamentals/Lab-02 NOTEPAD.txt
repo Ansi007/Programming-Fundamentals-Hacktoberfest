@@ -1,0 +1,119 @@
+          Programming fundamentals:
+                     Lab-02
+Task 1 [00] 
+A bank charges $10 per month plus the following check fees for a commercial checking account: 
+$.10 each for fewer than 20 checks 
+$.08 each for 20–39 checks 
+$.06 each for 40–59 checks 
+$.04 each for 60 or more checks 
+The bank also charges an extra $15 if the balance of the account falls below $400 (before any check fees are applied). Write a 
+program that asks for the beginning balance and the number of checks written. Compute and display the bank’s service fees for the 
+month.
+1.Input the beginning balance from user
+2.Input the check
+3. If ( beginning balance < 400 && beginning balance >=0)
+4.          If ( check < 20 )
+                    fee = .10 * checks + 10 +15
+            Else-If ( checks > = 20 && checks <= 39)
+                    fee = .08 * checks + 10 + 15
+            Else-If ( checks >=40 && checks <= 59)
+                     fee = .06 * checks +10 +15
+            Else-If (checks >=60)
+                      fee = .04 * checks + 10 + 15
+            
+5.Else-if (beginning balance >= 400)
+6.          If (checks < 20)
+                      fee = .10 * checks + 10
+            Else-if ( checks >=20 && checks <=39)
+                      fee = .08 * checks +10
+            Else-if (checks >=40 && checks <= 59)
+                       fee = .06 * checks + 10
+            Else-if ( checks >= 60 )
+                       fee = .04 * checks + 10 
+8. Else
+            If ((beginning blance +10) < 0)
+                   Print " the amount is overdrawn"
+End-if
+9.Print " End of the programm"
+
+                         =====================
+
+Task:2
+Write a program that asks for the names of three runners and the time it took each of them to finish a race. The program should 
+display who came in first, second, and third place.
+Solution:
+1.Input name of three runners from the user."runner1,runner2,runner3"
+2. Input the time required to finish the race."t"     20min
+3.If (runner1 took time < t)
+                 if(runner2 took time < t)
+                                  Print"runner1 is at first place"
+                 Else
+                                 Print"runner2 is at first place"
+                                 Print "runner1 is at second place"
+                                 Print " runner3 is at 3rd place"
+4.Else-If (runner2 took time < t) 
+                 If(runner3 took time < t)
+                                Print " runner2 is at first place"
+                 Else 
+                                Print " runner3 is at first place"
+                                Print " runner2 is at second place"
+                                Print " runner1 is at 3rd place"
+End-if
+5.Print "End of the programm" 
+                                   
+                               ======================
+                            
+Task:3
+Take n numbers from the user and determine that how many positive and negative integers were entered by the user.
+Solution:
+1.Input "n" numbers from the user.
+2.count of +ve no.s = 0
+3.count of +ve no.s = 0
+4. i = 1
+5. while ( i < = n)
+                       input a no. from user
+                       If (no. > 0)
+                       count of +ve no.s = count of +ve no.s + 1
+                       Else- If (no. < 0)
+                       count of -ve no.s = count of -ve no.s + 1
+End-if
+6.Print "count of +ve no.s"
+7.Print "count of -ve no.s"
+8. Print " End of the programm"
+
+
+                           =====================
+
+Task 4:
+Take a positive integer n from the user. Display all the divisors of n. 
+1.Input a +ve integer 'n' from user
+2. i = 1
+3. for ( i < = n & n > 0)
+                     If (n % i ==0)
+                               Print "i"
+                     End-if
+                                i = i +1
+4. Print " i "
+5. Print " End of the programm"
+
+
+                         =========================
+
+
+Task 5:
+Take n numbers from the user and determine their average.
+1.Input "n" numbers from the user
+2. i = 1
+3. sum = 0
+4. count of no. = 0
+5. while ( i < = n)
+                        input a no. from user
+                        sum = sum + no
+                        count of no. = count of no. + 1
+                                i = i + 1
+                         avg = sum / count of no.
+ End-while
+6.Print " avg"
+7. Print "End of the programm"
+
+                           =======================

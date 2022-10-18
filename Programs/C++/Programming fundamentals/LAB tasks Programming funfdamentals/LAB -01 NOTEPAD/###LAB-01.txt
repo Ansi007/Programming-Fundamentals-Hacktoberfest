@@ -1,0 +1,13 @@
+Task 4: Input a number form the user, if it is between 100 and 999, display “three” otherwise display “not three”.                [20]
+
+ Solution:
+
+1.	Input a number from user.
+2.	If (number > 100  &&  number  <999)
+3.	              Print “three”
+4.	 Else 
+5.	              Print  “not three”
+6.	End-if
+7.	Print “End of the program”.
+
+                                                 =======================================

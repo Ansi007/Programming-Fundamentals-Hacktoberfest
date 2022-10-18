@@ -1,0 +1,25 @@
+Task 2:
+ Write a program that takes three numbers and display them into ascending order. 
+                                                                
+          Solution:
+
+1.  Input three numbers in x, y & z respectively as  num1, num2 & num3.
+2.  If (x < y   &&   x < z)
+3.	          If (y < z)
+4.	                       Print “min , mid , max =  x , y, z” 
+5.	          Else
+6.	                       Print “min , mid , max = x , z , y”
+7.  Else-if ( y < x  &&  y < z)
+8.	          If (x < z)
+9.	                       Print “min , mid ,max = y , x , z”
+10.	          Else 
+11.	                       Print “min , mid ,max = y , z , x’’
+12. Else
+13.                      If (x < y)
+14.                                   Print “min, mid, max = z, x, y”
+15.                      Else 
+16.                                   Print “min, mid, max = z, y, x’’
+17. End-if
+18. Print “End of program”
+                                                =================================
+
