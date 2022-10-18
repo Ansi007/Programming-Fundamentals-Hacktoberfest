@@ -1,0 +1,32 @@
+from matrix import *
+def _main_():
+    matrix1 = createMatrix(2, 2)
+    print("Enter 4 intgers for a 2x2 Matrix to check whether it is symmetric or not")
+    inputMatrix(matrix1)
+    print("The entered Matrix is")
+    printMatrix(matrix1)
+    tm1 = transposeMatrix(matrix1)
+    print("The transpose of above Matrix is")
+    printMatrix(tm1)
+    if isSymmetric(matrix1):
+        print(" it is symetric")
+    else:
+        print("it is not symmetric")
+    print()
+
+    m1 = createMatrix(2, 2)
+    print("Enter 4 intgers for a 2x2 matrix 1")
+    inputMatrix(m1)
+    print("The entered Matrix is")
+    printMatrix(m1)
+    print()
+    m2 = createMatrix(2, 2)
+    print("Enter 4 intgers for a 2x2 matrix 2")
+    inputMatrix(m2)
+    print("The entered Matrix is")
+    printMatrix(m2)
+    print()
+    sm = addMatrices(m1, m2)
+    print("the sum of bothh matrices is")
+    printMatrix(sm)
+_main_()
