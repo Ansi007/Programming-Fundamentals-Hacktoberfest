@@ -1,0 +1,45 @@
+0. BSEF09M001Hammad Khan 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        22         21      31      74       B
+   PF         14         15      25      54       D
+   DLD        20         18      22      60       C
+1. BSEF09M003Younas Ahmad 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        30         21      29      80       A-
+   PF         34         25      30      89       A
+   DLD        10         15      10      35       F
+2. BSEF09M005Riffat Kaleem 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        33         20      33      86       A
+   PF         26         11      35      72       B
+   DLD        30         24      38      92       A
+3. BSEF09M012Barkat Jan 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        25         18      34      77       B+
+   PF         19         28      12      59       C
+   DLD        28         21      34      83       A-
+4. BITF09M002Khawer Hayat 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        11         18      37      66       B-
+   PF         19         17      27      63       C+
+   DLD        31         22      34      87       A
+5. BITF09M003Kishwar Hameed 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        24         20      33      77       B+
+   PF         28         24      37      89       A
+   DLD        19         15      26      60       C
+6. BITF09M010Yasir Ubaid 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        18         20      31      69       B-
+   PF         25         21      34      80       A-
+   DLD        29         22      33      84       A-
+7. BITF09M011Ahmad Ali 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        19         20      30      69       B-
+   PF         21         20      23      64       C+
+   DLD        25         26      32      83       A-
+8. BITF09M012Sana Sahir 
+  Subject  Sessional   Midterm   Final   Total   Grade 
+   ITC        19         23      32      74       B
+   PF         16         28      30      74       B
+   DLD        12         30      33      75       B+
