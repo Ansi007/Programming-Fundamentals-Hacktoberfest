@@ -1,0 +1,45 @@
+Task 3 :  Write a program that mimics a calculator. The program should take as input two integers and the operation to be performed. It should then output the numbers, the operator, and the result. (For division, if the denominator is zero, output an appropriate message.) . Use 1 for Addition,2 for Subtraction, 3 for Multiplication, and 4 for Division. 
+
+A sample-run follow:
+Sample run: Enter 1st number: 13
+ Enter 2nd number: 5
+Enyter operator: 13 * 5 = 65                                                                         [20]
+
+       Solution:
+
+1.    Input two integers as num1 & num2.
+2.    Input operations “+’’ , “-‘’ , “ * ”, “ / ‘’
+3.    Calculate num1,num2(addition, subtraction, multiplication and division)
+4.    Print “select operation either ‘+’ or ‘-‘ or ‘ *’ or ‘/’ ”
+5.    Print “ select either “1”  for ‘+’ or “2” for ‘-‘ or “3” for ‘*’ or “4” for ‘/’ ”
+
+6.    Print “ Enter two operands, num1 & num2 one by one”
+
+7.    Print “1. Add”
+
+8.   Print “2.  Subtract”
+9.   Print “3. Multiply”
+10. Print “4. Divide”
+11. If (operation ==1)              
+12.                   Print “add=num1+num2”
+13. Else-if (operation==2)
+14.	       Print “ subtract = num1 – num2 ”
+15. Else-if (operation ==3)
+16.                   Print “multiply = num1 * num2”
+17. Else-if (operation==4)
+
+              //check whether the num2 is zero or not in denominator
+
+18.           If (num2==0)
+19.                    Print “solution is infinite”
+20.           Else 
+21.                    Print “solution is finite”
+
+        // if the operator is not in the list then print invalid.
+
+22. Else 
+23.                  Print “invalid input”
+24. End-if
+25. Print “End of program”
+
+                                            ========================================

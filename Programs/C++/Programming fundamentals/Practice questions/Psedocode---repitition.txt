@@ -1,0 +1,795 @@
+P s e u d o C o d e - R e p e t i t i o n 
+Practice Questions 
+Problem List 
+
+Counter loop ---- 'for'  ( when it's known that how many times, the statement will be executed.)
+Conditional loop ----- 'while' ( when condition is implied that 'if this happen then stop execution')
+Q#1. 
+       Finding the sum of 10 numbers taken from the user. 
+solution:
+1. i = 1
+2. sum = 0
+3. while ( i <= 10)
+                       input no. from user
+                       sum = sum +no
+                        i = i + 1
+ End-while 
+4.Print "sum"
+                      
+Q#2.
+        Finding the sum of n numbers taken from the user, where n is taken from the user as well. 
+1. input n
+2. i = 1
+3. sum = 0
+4.while( i < = n)
+                       input no. from user
+                       sum = sum + no.
+                       i = i + 1
+ End-while
+5.Print "sum"
+
+
+
+Q#3.
+ Calculate the factorial of a positive integer entered by the user. 
+soution:
+1.Input a positive integer 
+2.fact = 1
+3. i = 1 
+4.while( i < = integer)
+                                fact = fact * i
+                                i = i + 1
+End-while
+5. Print "fact"
+
+
+Q#4. 
+Take two positive integers a and n from the user. Calculate and display a ^n . Assume that the power operator is not 
+available.
+
+Solution:
+   // number
+1. input  positive integer a
+   // power value
+2. input positive integer n
+3. power = 1
+4. while(i < = n)
+                     power  = power * integer a            
+                                     or 
+                     expponent = exponent * a
+                     i = i + 1
+ End-while
+5.Print "power"
+
+
+5. Take three numbers from the user and determine the largest number. Do it using a loop.
+Solution:
+1.input three numbers from user              
+2.i = 1
+3.largest = 0
+4. while ( i < =  3)                                        
+                           If ( number > largest)         
+                              largest = number
+                                 i = i + 1
+                           Else 
+                              largest = previous number
+    End- if
+    End -while
+5. Print " largest"
+
+
+
+6. Take a positive integer from the user. Keep displaying an error message and prompting for input again and again if 
+the user enters invalid input (negative or zero). 
+Solution:
+1.input a valid no.
+2. Take first number say no. 
+3. while ( i  < = 0)
+                                
+                                  input a valid no.(non-zero)
+                                 
+    End -while
+4. Print "error''
+
+
+
+
+7. Write an algorithm to determine the sum of a variable number of positive integers taken from the user. The 
+algorithm should keep prompting the user for more input till the user enters the sentinel value -999. 
+1.  i = 1
+2. sum = 0
+3.Input a numeric variable
+4. while ( i < = sentinel value -999)
+                                sum = sum + numeric variable
+                                i = i + 1
+4. End-while
+5. Print "sum"
+
+
+
+Q#8.
+        Input a 2-digit number and find absolute difference between its digits. 
+Solution:
+1. Input a 2-digit no. as "num1num2"          
+2. Calculate no.1 = num1 -num2              
+3. Calculate no.2 = num2 - num1   
+4. absolute difference=   no.1 or no.2        
+5. i = 10
+6.while (i < =99 )
+                   If ( no.1 < 0 )
+                               no.1 = no.1 * -1
+                                      Print " no.1"
+                 
+                  Else 
+                               no.2 = no.2  * -1 
+                                     Print " no.2"
+                  End-if
+                                     i = i + 1 
+   End-while
+7.Print " absolute difference"
+8. Print" End of programm"
+
+  
+
+
+Q#9.     
+        Input an integer (upto 4 digits), and stores its reverse in another variable. Then display both integers. 
+1. Input an integer  "n" from user.
+  // reverse value will store the reverse of original no. "n"
+2. reverse = 0 
+ // temporary value in which rigial value will be stored
+3. temp = n
+4. i =1
+5. while (  temp ! = 0 && i < =9999)                                                                        reverse = reverse * 10
+                                    reverse = reverse + temp %10
+                                    temp = temp  / 10
+                                        i = i +1
+ End-while
+6.Print "n" and  "reverse"
+7. Print " End of programm"
+
+
+
+
+
+Q#10. 
+           Input numbers till user inputs a zero, and, at the end, display last non-zero number.
+Solution:  
+1.  i = 1 
+2.  last number = 1
+3. while ( number ! = 0 && i <= infinity).                                                                        
+                                     Input number from user                                                        
+                                  last  number =non-zero  number 
+                                              i = i + 1
+   End - while 
+5. Print "last number "
+6. Print " End of programm"
+
+
+
+Q#11.
+           Input numbers till user inputs a zero, and display the largest number.
+Solution:
+1. largest no. = 1
+2. i = 1
+3. while ( number ! = 0 && i < = infinity)
+                                                 Input  a number from the user
+                                                number = non-zero number
+                                                       If (number > largest no.)
+                                                            largest no. = number
+                                                      Else
+                                                            largest no. = previous largest   
+                                                                    
+                                                 End-if
+                                                                    i = i + 1
+4. End-while
+5. Print " largest no.''  
+6.Print " End of the programm"
+
+
+              
+
+12. Input numbers till user inputs a zero, and display the smallest number 
+ Check if it works for all +ve inputs 
+ Now check algorithm # 55 (largest number) if it works for all -ve inputs 
+ If you find any problem, then solve it
+
+
+Solution: 
+1. smallest no. = 1
+2. i = 1
+3. while ( number ! = 0 && i < = infinity)
+                                                 Input  a number from the user
+                                                number = non-zero number
+                                                        If (number < smallest no.)
+                                                            smallest no. = number
+                                                            i = i + 1
+                                                        Else 
+                                                             smallest = previous smallest
+                                                 End-if
+4. End-while
+5. Print " smallest no.''  
+6.Print " End of the programm"
+
+ Check if it works for all +ve inputs 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q#13.
+ Input 10 numbers, and display smallest number
+Solution:
+1. smallest = 0
+2. i = 1
+3. while( i < = 10)
+                              Input a number from user           
+                                   If ( number < smallest)
+                                      smallest = number
+                                  Else 
+                                       smallest = previous no.
+                                             i = i + 1
+                                    End- if 
+End-while
+4.Print " smallest"
+5. Print " End of the programm"
+ 
+
+
+
+
+14. Input 10 numbers, and display count of Even and Odd numbers, separately, at the end.
+Solution:
+1. i = 1
+2. number = 0 
+3. even = 0 
+4. odd = 0
+5.while( i < = 10)
+                         Input a number from the user.
+                           If ( number % 2 == 0) 
+                                           even = even + 1
+                           Else 
+                                           odd = odd + 1
+                          End-if 
+                              i = i + 1
+6.End -while
+7. Print " even "
+8. Print " odd ''
+
+                                                                     
+                  
+
+
+Q#15:Input SLimit and ELimit from user, and display Even numbers between range, with both limits included 
+ Give an efficient solution that does not check divisibility of each number in the given range.
+1. Input Slimit from user ' 2 '
+2. Input Elimit from user ' 60 '
+3. Input a no. say "i"
+4. while ( i > = 2 && i < = 60 )
+                            
+                                i = i + 2
+5. End-while
+6. Print " i "
+7. Print " End of programm "
+
+       
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+`
+
+
+
+
+
+

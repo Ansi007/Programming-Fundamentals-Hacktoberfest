@@ -1,0 +1,32 @@
+                                                                   Programming fundamentals
+                                                                                 LAB-01
+        Name: MISBAH AZIZ
+        Roll no: BCSF20A522
+                                                                           TASKS ASSIGNED
+Task 5: 
+Input marks from a user, if marks are greater than 85 display “Excellent”, if the marks are between 80 and 84 (both inclusive) display “Very Good”, if the marks are between 75 and 79 (both inclusive) display “Good”, if the marks are between 70 and 74 (both inclusive) display “Fair”, if the marks are between 65 and 69 (both inclusive) display “Satisfactory”, otherwise display “You may not get the degree with such marks”.[20]
+Solution:
+1.	Input marks from user
+
+                            //initialize (Marks ==0)    
+2. If (marks > 85)
+3.                Print “Excellent”
+4. Else-if (marks >= 80 && marks <= 84)
+5.                Print “Very Good’’
+6. Else-if (marks >= 75 && marks <= 79)
+7.                Print “Good”
+8. Else-if (marks >= 70 && marks <= 74)
+9.                Print “Fair”
+10. Else-if (marks >= 65 && marks <= 69)
+11.              Print “Satisfactory”
+12.  Else 
+13.              Print “You may not get the degree with such marks”
+14. End-if
+15.  Print “End of the program”
+                 
+                                ========================================
+   
+
+     
+
+

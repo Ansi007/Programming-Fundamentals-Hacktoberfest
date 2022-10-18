@@ -1,0 +1,229 @@
+                                                      Problem List
+                                                     SEQUENCE
+Question(1): 
+Write a program that displays sum of two numbers. 
+solution:
+1.input two numbers in x & y
+//addition
+2.Calculate sum in "z" as z=x+y
+3.Print sum "z"
+
+
+
+Question(2):
+ Write a program that inputs two numbers and adds them. 
+solution:
+1.input two numbers in variables x & y
+//Addition
+2.calculate add in 'z' as z = x + y
+3.Print add 'z'
+
+
+
+
+Question(3):
+ Write a program that inputs the number of hours from user and converts them in minutes.
+Note: Variable name should be meaningful for example: hours, minutes etc. 
+
+solution:
+1.input nimber of hours in "hours"
+  //conversion of hours into minutes.
+2.Calculate minutes=hours*60
+3.Print minutes
+
+
+
+
+Question (4):
+Write a program that inputs the number of weeks from user and converts it into days. 
+solution:
+1.Iput number of weeks in "weeks"
+ //conversion of weeks into days.
+2.Calculate "days" = weeks * 7
+3.Print "days"
+
+
+
+
+Question(5):
+ Write a program that converts yards into meters. 
+Solution:
+1.Input number of yards in "yards"
+  //conversion of yards into meters.
+2.Calculate meters = yards * 0.9144
+3.Print meters
+
+
+
+
+QUestion(6):
+ Write a program that inputs two numbers and displays their:
+ (a) Sum (b) Difference
+ (c) Product (d) Division 
+Solution:
+1.Input  two numbers in x & y
+  //Addition
+2.Calculate sum = x + y
+ //Subtraction
+3.Calculate Diff = x - y
+  //Multiplication
+4.Calculate prod = x * y
+  // Division
+5.Calculate div = x / y
+  //print all operations one by one 
+6.Print sum
+7.Print Diff
+8.Print product
+9.Print division 
+
+
+
+Question(7):
+Write a program that takes temperature in Fahrenheit and converts it into Celsius.
+((°F - 32) x 5/9 = °C ) 
+1.Input temperature in Fahrenheit"°F"
+  //conversion of fahrenheit to celcius
+2.Calculate temperature in celcius  °C = (°F - 32) x 5/9
+3.Print °C (celcius temperature)
+
+
+
+Question no (8):
+Write a program that initializes three variables and displays z after computing it as (z=x+y) 
+Solution:
+1.Input three variables as x , y & z
+  //Addition of two variables x & y
+2.Calculate sum = x + y
+3.Print output "z" as 'z = x + y'
+
+
+
+
+Question no (9):
+9. Write a program that evaluates the following expression: y=3b
+Try to analyze which variable should be input. Note that 3b equals 3*b, so don’t miss understand.
+Sollution:
+1.input a variable "b"
+  //multiply the variable with number 3
+2.Calculate mult = 3 * b
+3.Print output y as 'y = 3 * b'
+
+
+
+Question no(10):
+Write a program that inputs a number and displays its square. (Hint : y = x*x) 
+Solution:
+1.Input a number in x
+  // multiply the number in x by itself
+2.Calculate mult = x * x
+3.Print output y as 'y = x*x'
+
+
+
+Question no(11):
+Write a program that evaluates the following expression : z=3x+y 
+Solution:
+1.Input three variables x , y & z
+  //multiply 3 by x
+2.Calculate mult = 3 * x
+  //addition "mult with y"
+3.Calculate sum = mult + y
+4.Print output 'z' as z=3x+y 
+
+
+
+
+Question no(12):
+Write a program that evaluates the following expression : z=(x+y)/7 
+Solution:
+1.Input three variables as x , y & z
+  //addition of x & y
+2.Calculate sum = x + y
+  //divide sum by 7
+3.Calculate div = sum/7 or (x + y)/7
+4. Print output 'z' as  z=(x+y)/7 
+
+
+
+
+Question(13):
+Write a program that evaluates the following expression : (3x+y)/(z+2)
+(Hint: Try to solve it without involving any additional variable) 
+Solution:
+1.Input three variales as x , y & z
+  //multiply 3 by variable x
+2.Calculate mult = 3 * x
+  //sum "mult" with variable y
+3.Calculate sum1 = mult + y or
+   sum1 = (3 * x )+ y
+  //sum 2 with variable z
+4.Calculate sum2 = z + 2
+  //Divide sum1 with sum2
+5.Calculate div = sum1/sum2 or
+    div =(3x+y)/(z+2)
+6.Print expression, (3x+y)/(z+2)
+
+
+
+
+Question no(14):
+Write a program that evaluates the following expression : (3x+z)/(y+(4*3))
+Solution:
+1.Input three variables as x , y & z
+  //multiply 3 by x
+2.Calculate mult1 = 3 * x
+  //sum mult1 with z
+3.Calculate sum1 = mult1 + z
+  //multiply two numbers 4 & 3
+4.Calculate mult2 = 4 * 3
+  // sum mult2 with y
+5.Calculate sum2 = mult2 + y
+  //Divide sum1 by sum2
+6.Calculate div = sum1/sum2 or
+    div=(3x+z)/(y+(4*3))
+7.Print expression, (3x+z)/(y+(4*3))
+
+
+
+
+Question no(15):
+15. Write a program that calculates and displays the Area of Rectangle. (How many variables should we need to
+calculate Area?)
+Solution:
+1.Input width and length of rectangle
+  //area = width * length
+2.Calculate Area = length * width
+3.Print area of rectangle
+
+
+
+
+
+Question(16):
+Write a program that inputs two variables, stores their sum in the first one and the difference in the second one.
+And dry run your program to see if it works correctly. Also Draw an Execution Sheet on your Notebook to check whether your program works correctly or not.
+
+Solution:
+1.Input two variables as x & y
+ //sum  two variables
+2.Calculate sum = x + y
+  //subtract two variables
+3.Calculate sub = x - y
+  //output x
+4.Print output 'x' as 'x = x + y'
+  //output y
+5.Print output 'y' as 'y = x - y'
+ 
+ *************The end************
+
+
+	
+
+
+
+
+
+
+
+
+

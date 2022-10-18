@@ -1,0 +1,25 @@
+                                                                  Programming fundamentals
+                                                                                 LAB-01
+        Name: MISBAH AZIZ
+        Roll no: BCSF20A522
+                                                                           TASKS ASSIGNED
+Task 1: Write a program that calculates and displays the Area and Perimeter of Circle with proper output message.    [20]
+
+	Solution:
+
+1.Input radius r for area of circle.
+2.Input radius r for perimeter of circle.
+
+                    // π(pie) =3.14
+                    //area of circle = πr^2
+
+3.Calculate area = π * r *r   OR    3.14 * r *r
+
+                    // perimeter or circumference of circle=2 πr
+
+ 4.Calculate perimeter = 2 * π * r
+ 5. Print “area”.
+ 6. Print “perimeter”.
+ 7. Print “End of program’’.
+
+

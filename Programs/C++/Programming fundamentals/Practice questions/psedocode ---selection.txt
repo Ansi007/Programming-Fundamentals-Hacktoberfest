@@ -1,0 +1,345 @@
+                                                                                         Psedocode problems
+                                                                                               Selection
+  Problem List
+ 
+TWO-WAY IF :
+Q#1.
+        Write an if-else statement that outputs the word “High” if the value of the variable score is greater than 100, and 
+“Low” if the value of score is at most 100.
+
+Solution:
+1. Input "score"
+2.If (score > 100)
+                   Print "high"
+3.Else 
+                   Print "low"
+4.End-if
+5. Print "End of programm"
+
+
+Q#2. Write a program that gets a number from user, if it is negative then display “The number is negative” otherwise, 
+display “The number is non-negative”. 
+Solution:
+1.Input a number from user
+2. If ( number < 0)
+                     Print " The number is negative"
+3.Else 
+                    Print " The number is non-negative"
+  End-if
+4.Print " End of the programm"
+
+
+3. Prompt the user for two numbers A & B, computes and displays C=A/B. If the number B is zero, displays a “division 
+by Zero” message. 
+ Solution:
+1. Input two numbers "A & B"
+2.Calculate div = A/B
+3. If (number B == 0)
+                         Print " divison by zero"
+4.Else     
+                         Print " division by a non-zero"
+ End - if
+5. Print " End of programm"
+
+
+
+4. Write a program to input age and print if the age is valid enough to have a driving license.
+Solution:
+1.Input age
+2.If ( age > = 18)
+                   Print "age is valid to have a driving licence"
+3.Else
+                  Print " age is not valid to have a driving licence"
+ End - if
+4. Print "  end of programm"
+
+
+
+5. Input two positive numbers from user and display the maximum out of them. 
+Solution:
+1.Input two positive numbers from user as "num1 & num2"
+2.If (num1 > num2)
+                     Print " num1 is maximum"
+3. Else
+                     Print "num2 is maximum"
+  End-if
+4. Print "End of programm"
+
+
+6. Three numbers denoted by the variables A, B and C are supplied as input data. Identify and print the largest one of 
+these numbers.
+Solution:                                                                                                                                                                                                                 1.Input number in variable A
+2.Input number in variable B
+3. Input number in variable C
+4.If (A > B )
+                If ( A > C )
+                               Print " largest one is A"
+                Else 
+                              Print " largest one is C"                                                                                                  5.Else-if ( B > A)
+                 If ( B > C)
+                             Print " largest one is B"
+                 Else 
+                             Print " largest one is  C
+6. Else -if ( C > A)
+                 If (C > B)
+                             Print " largest one is C"
+                 Else
+                            Print " largest one is  B"
+  End-if
+7. Print " End of the programm"
+
+
+
+
+Q#7:
+         Write a program that reads an integer and determines and prints whether it is odd or even. (Hint: First use the 
+simple division, then introduce modulus operator).
+1. Input an integer
+2. Calculate remainder = number / 2
+3. If ( remainder == 0)
+                              Print  " number is even"
+4. Else
+                             Print " number is odd " 
+ End-if 
+5.Print " End-of the programm"
+   
+
+8. Write a program that reads two integers (in any order) and then print either “multiple” or “not” according to 
+weather 2nd number is multiple of the 1st one or not.
+1.Input two integers "num1 & num2"
+2. calculate remainder = num1/num2
+3.If ( remainder ==0)
+                         Print " mulltiplle''
+4. Else 
+                        Print "not"
+
+5.End-if
+6. Print "End of the programm" 
+
+
+ONE-WAY IF
+ 
+Q#1. 
+      Write a program that gives absolute of a number input by user. 
+1. Input a number by user "no"
+2. If ( no < 0)
+              Calculate no = no * - 1
+             Print "no." 
+3. Else 
+            Print "no. is  a"
+  End-if
+4.Print ' Emd of programm"
+
+
+
+Q#2. 
+Write a program that requests an integer value representing the month of the year and gives the number of days 
+in that month. 
+Solution:
+1.Input a number representing the number of month
+2.If (month == 1)
+                         Print "31 days"
+End-if
+3. If ( month == 2)
+                        If ( year == leap year)
+                                               Print " 29 days"
+                        Else
+                                               Print " 28 days" 
+End-if
+4. If (month == 3)
+                        Print " 31 days"
+End-if
+5. If (month == 4)
+                        Print " 30 days"
+End-if
+6.If ( month == 5)
+                        Print "31 days"
+End-if
+7. If ( month == 6)
+                         Print " 30 days"
+End-if 
+8.  If (month == 7) 
+                        Print "31 days"
+End-if
+9. If ( month == 8 )
+                        Print " 31 days"
+ End-if
+10.If ( month ==9)
+                       Print " 30 days"
+End-if 
+11. If ( month ==10 )
+                       Print " 31 days"
+ End-if
+12. If (month == 11)
+                       Print " 30 days "
+ End-if 
+13. If ( month == 12)
+                       Print " 31 days ''  
+End-if
+14.Print "End of the programm"
+
+
+
+
+Q#3.
+        Write a program that reads a single digit value (0-9) and then prints the number as a literal string. For example, if 
+input is 7, then the output should be word “seven”.
+Solution:
+1.Input a single digit value by user.
+2. If (digit == 0 )
+                       Print " zero"
+End-if
+3. If (digit == 1)
+                       Print "one"
+End-if
+4.If (digit == 2)
+                      Print " two"
+End-if
+5. If ( digit == 3)
+                      Print "three"
+End-if
+6. If ( digit == 4)
+                      Print " four"
+End-if
+7. If (digit == 5)
+                      Print " five"
+End-if
+8.If (digit == 6)
+                      Print " six"
+End-if
+9.If (digit == 7)
+                      Print " seven"
+End-if
+10. If (digit == 8)
+                      Print " eight"
+End-if
+11.If (digit == 9)
+                      Print " nine"
+End-if
+12. Print " End of the programm''
+
+
+
+
+Q#4.
+        Write a program that takes a point (x, y) from the user and find where does the point lies.
+1. Input a point ( x, y) from the user
+2.If ( x > 0 && y > 0)
+                       Print "point is in the first quardinate"
+End-if
+3. If ( x > 0 && y < 0)
+                       Print " point is in the fourth quardinate"
+End-if
+4. If ( x < 0 && y > 0)
+                       Print " point is in the second quardinate"
+End-if
+5. If ( x < 0 && y < 0 )
+                      Print " point is in the third quardinate"
+End-if
+6.Print '' End of programm"
+
+
+
+JOINING CONDITIONS using && and || 
+
+Q#1.
+        Input a number form the user, if it is between 1 and 100, display “In Range” otherwise display “Out of Range”.
+1.Input a number from user.
+2. If ( number > 1 && number < 100 )
+                                       Print " in range "
+3. Else 
+                                       Print " out of range"
+  end -if 
+4. Print " End of programm"
+
+
+2. Write a program that inputs a number and displays its number of digits. Assume that user will enter a positive number less 
+than 1000.
+1. Input the number of digits 
+2.If ( number > 0 && number < 10)
+                                        Print " One digit number "
+3.Else-if ( number > 9 && number < 100)
+                                        Print " two digit number"
+4.Else-if ( number > 99 && number < 1000)
+                                        Print " three digit numer"
+5. End-if
+6. Print " End of the programm"
+
+
+
+Q#3.
+        Write an if-else statement that outputs the word “Warning” provided that either the value of the variable temperature is 
+greater than or equal to 100, or the value of the variable pressure is greater than or equal to 200, or both. Otherwise, the ifelse statement outputs the work “OK”. 
+Solution:
+1. Input temperature 
+2. Input pressure
+3. If ( temperature >= 100  || presure > = 200)
+                                                         Print " Warning"
+4. Else 
+                                                         Print " OK"
+ End-if
+5. Print " End of the programm"
+
+
+Q#4. 
+      Input marks from a user, if marks are greater than 85 display “Excellent”, if the marks are between 80 and 84 (both inclusive) 
+display “Very Good”, if the marks are between 75 and 79 (both inclusive) display “Good”, if the marks are between 70 and 74 
+(both inclusive) display “Fair”, if the marks are between 65 and 69 (both inclusive) display “Satisfactory”, otherwise display 
+“You may not get the degree with such marks”.
+Solution:
+1. Input marks from user
+2.If ( marks > 85 )
+                          Print " Excellent "
+3. Else-If ( marks >= 80 && marks < = 84)
+                          Print " Very Good "
+4. Else-If ( marks > = 75 && marks < = 79)
+                          Print " Good"
+5.Else-if ( marks >= 70 && marks <= 74 )
+                          Print " Fair "
+6. Else-if (marks >= 65 && marks < = 69)
+                          Print "satisfactory"
+7.Else 
+                          Print " “You may not get the degree with such marks”
+8. End-if 
+9. Print  "End of the programm"
+
+
+
+5. Write a program that takes a point (x, y) from the user and find where does the point lies.
+ Solution:
+1.Input the points ( x, y)
+2.If ( x > 0 && y > 0)
+                       Print "point is in the first quardinate"
+End-if
+3. If ( x > 0 && y < 0)
+                       Print " point is in the fourth quardinate"
+End-if
+4. If ( x < 0 && y > 0)
+                       Print " point is in the second quardinate"
+End-if
+5. If ( x < 0 && y < 0 )
+                      Print " point is in the third quardinate"
+End-if
+6.Print '' End of programm"
+                                      
+                                                  ============================
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+                                                                                                                                  
+
+
+
+
+
