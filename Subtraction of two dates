@@ -1,0 +1,81 @@
+#include<iostream>
+using namespace std;
+class sub_date
+{
+private:
+	int year;
+	string month;
+	bool status;
+public:
+	int day;
+	sub_date();
+	sub_date(string mnth, int dy, int yer);
+	void setdata(string m, int d, int y);
+	bool operator > (sub_date& obj);
+	sub_date operator - (sub_date& obj);
+};
+sub_date::sub_date()
+{
+	month = " ";
+	year = 0;
+	day = 0;
+}
+sub_date::sub_date(string mnth, int dy, int yer)
+{
+	month = mnth;
+	day = dy;
+	year = yer;
+}
+void sub_date::setdata(string m, int d, int y)
+{
+	month = m;
+	year = y;
+	day = d;
+}
+bool sub_date::operator>(sub_date& obj)
+{
+	if (day > obj.day)
+	{
+		status = true;
+	}
+	else
+	{
+		status = false;
+	}
+	return status;
+}
+sub_date sub_date::operator-(sub_date& obj)
+{
+	sub_date temp;
+	operator > (obj);
+	if (status == true)
+	{
+		temp.day = day - obj.day;
+	}
+	else
+	{
+		temp.day = obj.day - day;
+	}
+	return temp;
+}
+int main()
+{
+	int day,year;
+	string month;
+	cout << "PLEASE! first enter MONTH then enter DAY and then YEAR" << endl;
+	cout << "enter the first date : " << "\t";
+	cin >> month;
+	cin >> day >> year;
+
+	sub_date date1(month, day, year);
+	sub_date date2,date3;
+
+	cout << "enter the second date : " << "\t";
+	cin >> month;
+	cin >> day >> year;
+
+	date2.setdata(month, day, year);
+	date3 = date1 - date2;
+	cout << "AFTER SUBTRACTION OF TWO DATE " << endl;
+	cout << month  <<" " << date3.day << " , " << year << endl;
+}
