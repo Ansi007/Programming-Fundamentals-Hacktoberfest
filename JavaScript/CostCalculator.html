@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <tr class="bg-primary">
+                <th>Coffee Brands</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Death Wish Coffee</td>
+                <td>Rs. 200</td>
+                <td><input type="text" id="in1"></td>
+            </tr>
+            <tr>
+                <td>Starbucks French Roast</td>
+                <td>Rs. 250</td>
+                <td><input type="text" id="in2"></td>
+            </tr>
+            <tr>
+                <td>Rising Sun Brazil Peaberry</td>
+                <td>Rs. 300</td>
+                <td><input type="text" id="in3"></td>
+            </tr>
+            <tr>
+                <td>Lavazza Super Crema Espresso</td>
+                <td>Rs. 350</td>
+                <td><input type="text" id="in4"></td>
+            </tr>
+            <tr>
+                <td>Hawaiian Gold Kona Gourmet Blend</td>
+                <td>Rs. 280</td>
+                <td><input type="text" id="in5"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <div class="row ml-0">
+            <button onclick="total()" class="btn btn-primary mr-2">Total Cost (Rs.)</button>
+            <textarea id="txt" cols="30" rows="2"></textarea>
+        </div>
+    </div>
+    <div class="container pt-2">
+        <button onclick="document.getElementById('txt').value=''" class="btn btn-dark">Submit Order</button>
+    </div>
+    <script>
+        function total() {
+            var n1 = parseInt(document.getElementById("in1").value) || 0,
+                n2 = parseInt(document.getElementById("in2").value) || 0,
+                n3 = parseInt(document.getElementById("in3").value) || 0,
+                n4 = parseInt(document.getElementById("in4").value) || 0,
+                n5 = parseInt(document.getElementById("in5").value) || 0;
+            var tot = (n1 * 200) + (n2 * 250) + (n3 * 300) + (n4 * 350) + (n5 * 280);
+            document.getElementById("txt").innerHTML = tot;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
