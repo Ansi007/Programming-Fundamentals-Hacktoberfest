@@ -1,14 +1,14 @@
 //program for printing the next 20 leap years.
-#include <stdio.h>
-
+#include<iostream>
 void isLeap(int year);
 int count=0;
-
 int main() {
-
-
-
-for(int i=2023;i<3000;i++)
+    int n,m;
+    cout<<"enter the number:"<<endl;
+        cin>>n;
+    cout<<"enter the number 2:"<<endl;
+        cin>>m;
+for(int i=n;i<m;i++)
 {
     
     isLeap(i);
@@ -16,9 +16,6 @@ for(int i=2023;i<3000;i++)
     {
         return 0;
     }
-}
-
-    return 0;
 }
 
 void isLeap(int year)
@@ -34,19 +31,9 @@ void isLeap(int year)
         }
         else
         {
-            printf("%d",year);
-            printf("\n\n");
+            cout<<year<<endl;
+    
             count++;
         }
 
     }
-
-
-    else
-        {  
-            printf("%d",year);
-              printf("\n\n");
-              count++;
-            
-        }
-}
