@@ -1,0 +1,139 @@
+from random import randint
+list1 = [0]*101
+position = 0
+isCase = True
+isWin = True
+#for ladders
+ladderone1 = randint(0,99)
+ladderone2 = randint(0,99)
+if ladderone1 < ladderone2:
+    list1[ladderone1] = ladderone2
+    ladderonesmall = ladderone1
+else:
+    list1[ladderone2] = ladderone1
+    ladderonesmall = ladderone2
+laddertwo1 = randint(0,99)
+laddertwo2 = randint(0,99)
+if laddertwo1 < laddertwo2:
+    list1[laddertwo1] = laddertwo2
+    laddertwosmall = laddertwo1
+else:
+    list1[laddertwo2] = laddertwo1
+    laddertwosmall = laddertwo2
+ladderthree1 = randint(0,99)
+ladderthree2 = randint(0,99)
+if ladderthree1 < ladderthree2:
+    list1[ladderthree1] = ladderthree2
+    ladderthreesmall = ladderthree1
+    
+else:
+    list1[ladderthree2] = ladderthree1
+    ladderthreesmall = ladderthree2
+ladderfour1 = randint(0,99)
+ladderfour2 = randint(0,99)
+if ladderfour1 < ladderfour2:
+    list1[ladderfour1] = ladderfour2
+    ladderfoursmall = ladderfour1
+else:
+    list1[ladderfour2] = ladderfour1
+    ladderfoursmall = ladderfour2  
+
+#for snake
+snake1 = randint(0,99)
+snake2 = randint(0,99)
+if snake1 > snake2:
+    list1[snake1] = snake2
+    snakebig = snake1
+else:
+    list1[snake2] = snake1
+    snakebig = snake2
+print(list1)
+for i in range(1000):
+    dice = randint(1,6)
+    if position == 96:
+        if dice < 5:
+            position+=dice
+            print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice > 5:
+            print("Piece cannot move, required value is less then 6")
+            isCase = False
+    if position == 97:
+        if dice < 4:
+            position+=dice
+            print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice > 4:
+            print("Piece cannot move, required value is less then 5")
+            isCase = False
+    if position == 98:
+        if dice < 3:
+            position+=dice
+            print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice > 3:
+            print("Piece cannot move, required value is less then 4")
+            isCase = False
+    if position == 99:
+        if dice < 2:
+            position+=dice
+            print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice > 2:
+            print("Piece cannot move, required value is less then 3")
+            isCase = False
+    if position == 100:
+        if dice == 1:
+            position+=dice
+            print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice > 1:
+            print("Piece cannot move, required value is less then 2")
+            isCase = False
+    if position == 101:
+        print("You have won")
+        isCase = False
+        break
+        
+    if isCase:
+        position+=dice
+        print(f"Diece has value {dice}, piece move to cell {position}")
+        if dice == ladderonesmall:
+            if (position + list1[ladderonesmall]) > 101:
+                print(f"There is ladder on cell {position}, piece moved to {101}")
+                print("you won")
+                break
+            else:
+                print(f"There is ladder on cell {position}, piece moved to {position + list1[ladderonesmall]}")
+                position +=list1[ladderonesmall]
+            
+        elif dice == laddertwosmall:
+            if (position + list1[laddertwosmall]) > 101:
+                print(f"There is ladder on cell {position}, piece moved to {101}")
+                print("You Won")
+                break
+            else:
+                print(f"There is ladder on cell {position}, piece moved to {position + list1[laddertwosmall]}")
+                position +=list1[laddertwosmall]
+
+           
+        elif dice== ladderthreesmall:
+            if (position + list1[ladderthreesmall]) > 101:
+                print(f"There is ladder on cell {position}, piece moved to {101}")
+                print("you won")
+                break
+            else:
+                print(f"There is ladder on cell {position}, piece moved to {position + list1[ladderthreesmall]}")
+                position +=list1[ladderthreesmall]
+
+        elif dice == ladderfoursmall:
+            if (position + list1[ladderfoursmall]) > 101:
+                print(f"There is ladder on cell {position}, piece moved to {101}")
+                print("You won")
+                break
+            else:
+                print(f"There is ladder on cell {position}, piece moved to {position + list1[ladderfoursmall]}")
+                position +=list1[ladderfoursmall]
+
+        elif dice == snakebig:
+            if (position - list1[snakebig]) > 0:
+                print(f"There is snake on cell {position}, piece moved to {position - list1[snakebig]}")
+                position -=list1[snakebig]
+            else:
+                print(f"There is snake on cell {position}, piece moved to {0}")
+                position= 0
