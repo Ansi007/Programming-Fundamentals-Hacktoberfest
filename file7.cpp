@@ -1,31 +1,51 @@
 #include <iostream>
-#include <cstring>
+#include<string>
 using namespace std;
-
-int main()
+bool isprime(int h)
 {
-
-	char str[50];
-
-
-	cout << "Enter string : ";
-	cin >> str;
-	int l = strlen(str);
-	for (int i = 0; i < l; i++)
-	{
-		if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'
-			|| str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
-		{
-			for (int j = i; j < l; j++)
-			{
-				str[j] = str[j + 1];
-			}
-			i--;
-			l--;
-		}
-	}
-
-	cout << "After removing Vowels: " << str;
-
-	return 0;
+    int count=1;
+    for(int i=2;i<=h;i++)
+    {
+        if(h%i==0)
+        count++;
+    }
+    if(count==2)
+    return true;
+    else
+    return false;
+}
+int rotate(string& m)
+{
+    string tempo="";
+    for(int i=1;i<m.size();i++)
+    {
+        tempo=tempo+m[i];
+    }
+    tempo=tempo+m[0];
+    int value=stoi(tempo);
+    
+    return value;
+}
+int main() {
+    int n;
+    cin>>n;
+    string temp=to_string(n);
+    int counter=0;
+    if(isprime(n))
+    {
+    for(int i=0;i<temp.size();i++)
+    {
+        int number=rotate(temp);
+        temp=to_string(number);
+        if(isprime(number))
+        counter++;
+    }
+    if(counter==temp.size())
+    cout<<"It is circular prime\n";
+    else
+    cout<<"It is not circular prime\n";
+    }
+    else
+    cout<<"It is not circular prime\n";
+    return 0;
 }
