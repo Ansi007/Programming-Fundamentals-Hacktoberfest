@@ -1,0 +1,28 @@
+/*  C++ Program to Generate Fibonacci Series for N numbers  */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i, terms, first = 0, second = 1, next;
+
+    first = 0;
+    second = 1;
+
+    cout << "How many terms u want to Display :: ";
+    cin >> terms;
+
+    cout << "\nThe Fibonacci series for [ " << terms << " ] terms are :: \n\n";
+    for (i = 0; i < terms; i++)
+    {
+        cout << " " << first << " ";
+        next = first + second;
+        first = second;
+        second = next;
+    }
+
+    cout << endl;
+
+    return 0;
+}
