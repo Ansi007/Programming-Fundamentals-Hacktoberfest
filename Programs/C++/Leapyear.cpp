@@ -1,13 +1,25 @@
-//WAP to check whater a given year is leap year or not using Ternary operator
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-int a;
-cout<<"Enter year which you want to check: ";
-cin>>a;
-int b;
+	int year;
+	cout << "Enter the year:";
+	cin >> year;
+	if (year % 400 == 0)
+	{
+		cout << "It is leap year\n";
+	}
+	else if (year % 100==0)
+	{
+		cout << "It is not a leap year\n";
+	}
+	else if (year % 4 == 0)
+	{
+		cout << "It is leap year\n";
 
-b=(a%4==0 && a%100!=0)?(printf("%d is a leap year \n",a)):((a%400==0)?(printf("%d is a leap year \n",a)):(printf("%d is not a leap year \n",a)));
-return 0;
+	}
+	else
+	{
+		cout << "It is not a leap year\n";
+	}
 }
