@@ -1,45 +1,31 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-/* Function to reverse arr[] from start to end*/
-void rvereseArray(int arr[], int start, int end)
-{
-	while (start < end)
-	{
-		int temp = arr[start];
-		arr[start] = arr[end];
-		arr[end] = temp;
-		start++;
-		end--;
-	}
-}	
-
-/* Utility function to print an array */
-void printArray(int arr[], int size)
-{
-for (int i = 0; i < size; i++)
-cout << arr[i] << " ";
-
-cout << endl;
-}
-
-/* Driver function to test above functions */
-int main()
-{
-	int arr[] = {1, 2, 3, 4, 5, 6};
-	
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	// To print original array
-	printArray(arr, n);
-	
-	// Function calling
-	rvereseArray(arr, 0, n-1);
-	
-	cout << "Reversed array is" << endl;
-	
-	// To print the Reversed array
-	printArray(arr, n);
-	
-	return 0;
-}
+#include <iostream>  
+using namespace std;  
+  
+int main ()  
+{  
+    int arr[50], num, temp, i, j;  
+    cout << " Please, enter the total no. you want to enter: ";  
+    cin >> num;  
+      
+    // use for loop to enter the numbers   
+    for (i = 0; i < num; i++)  
+    {  
+        cout << " Enter the element " << i+1 << ": ";  
+        cin >> arr[i];  
+    }  
+      
+      
+    for ( i = 0, j = num - 1; i < num/2; i++, j--)  
+    {     
+        temp = arr[i];  
+        arr[i] = arr[j];  
+        arr[j] = temp;  
+    }  
+    cout << "\n Reverse all elements of the array: " << endl;  
+    // use for loop to print the reverse array  
+    for ( i = 0; i < num; i++)  
+    {  
+        cout << arr[i] << " ";  
+    }  
+    return 0;  
+}  
